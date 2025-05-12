@@ -1,1 +1,2 @@
-# WADProject
+# FitMuslim GO Proposal
+## Group C
