@@ -14,8 +14,14 @@ Group Members
 ### OBJECTIVES
 
 ### FUNCTION AND FUNCTIONALITIES
-**A. Workout Log Management**
-**B. Goal & Progress Dashboard**
-**C. Nutrition & Meal Planner**
-**D. Daily Islamic Motivation (Nur Alia Alina)**
-**E. Workout Routine Sharing & Forum (Nur Nisa Humairah)**
+**A. Workout Log Management** <br/>
+**B. Goal & Progress Dashboard** <br/>
+**C. Nutrition & Meal Planner** <br/>
+**D. Daily Islamic Motivation (Nur Alia Alina)** <br/>
+**E. Workout Routine Sharing & Forum (Nur Nisa Humairah)** <br/>
+
+### ENTITY RELATIONSHIP DIAGRAM (ERD)
+
+### SEQUENCE DIAGRAM
+
+### REFERENCES
