@@ -15,7 +15,7 @@ Group Members
 
 ### FUNCTION AND FUNCTIONALITIES
 **A. Workout Log Management** <br/>
-**B. Goal & Progress Dashboard** <br/>
+**B. Goal & Progress Dashboard (Nurfathin Atirah)** <br/>
 **C. Nutrition & Meal Planner** <br/>
 **D. Daily Islamic Motivation (Nur Alia Alina)** <br/>
 **E. Workout Routine Sharing & Forum (Nur Nisa Humairah)** <br/>
