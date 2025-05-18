@@ -4,7 +4,7 @@ Group Members
 | Name     | Matric No       |
 | ------------- |:-------------:|
 | Nur Nisa Humairah Binti Rosdi     | 2122408 |
-| col 2 is      | centered      | 
+| Nur Alia Alina Binti Abdul Rahman    | 2223988     | 
 | zebra stripes | are neat      |
 | zebra stripes | are neat      |
 | zebra stripes | are neat      |
@@ -12,12 +12,41 @@ Group Members
 ### INTRODUCTION
 
 ### OBJECTIVES
+- Promote a healthy lifestyle among muslims
+- integrate faith with fitness
+- ensure easy access and usability
+- encourage community engagement and support
+  
+
 
 ### FUNCTION AND FUNCTIONALITIES
 **A. Workout Log Management** <br/>
 **B. Goal & Progress Dashboard (Nurfathin Atirah)** <br/>
 **C. Nutrition & Meal Planner** <br/>
 **D. Daily Islamic Motivation (Nur Alia Alina)** <br/>
+
++ **Main Purpose**:To inspire and uplift users on their fitness journey by providing daily Islamic reminders, quotes, or motivational content that promotes discipline, self-care, and spiritual well-being in alignment with Islamic teachings.
+  
+**Core Functionalities:** <br/>  
+
+**1. Daily Islamic Motivation (Post CRUD)** 
+- Admin or authorized users can create daily motivational posts.
+- Each post includes:
+   + A short Islamic quote or reminder (e.g., from the Qur'an or Hadith)
+   + Optional description or reflection
+   + Image or visual design for aesthetic appeal
+   + Difficulties level (beginner, intermediate, advanced)
+   + Category/tag (e.g., “Discipline,” “Gratitude,” “Strength”)
+- Post can be:
+   + Created  (only by the author)
+   + Updated/Edited (only by the author)
+   + Deleted (only by the author or admin)
+   + Viewed/Read publicly <br/>
+   + Users can like or bookmark motivational posts
+   + Users can share posts to social media or within the app.
+   
+  
+
 **E. Workout Routine Sharing & Forum (Nur Nisa Humairah)** <br/>
 
 + **Main Purpose**: To allow users to share their workout routines, engage in discussions, and provide support or motivation to other users. <br/>
@@ -37,6 +66,7 @@ Group Members
    + Edited (only by the author)
    + Deleted (only by the author or admin)
    + Viewed publicly <br/>
+   
 
 **2. Like and Comment System**
 - Users can like a post
