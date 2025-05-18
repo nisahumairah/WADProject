@@ -1,5 +1,5 @@
 # FitMuslim GO Proposal
-## Group C
+## SECTION 1 - GROUP C
 Group Members
 | Name     | Matric No       |
 | ------------- |:-------------:|
