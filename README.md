@@ -3,13 +3,17 @@
 Group Members
 | Name     | Matric No       |
 | ------------- |:-------------:|
-| Nur Nisa Humairah Binti Rosdi     | 2122408 |
+| Nur Nisa Humairah Binti Rosdi        | 2122408 |
 | Nur Alia Alina Binti Abdul Rahman    | 2223988     | 
-| zebra stripes | are neat      |
+| Nur Balqis binti Sazalee             | 2218348  |
 | zebra stripes | are neat      |
 | zebra stripes | are neat      |
 
 ### INTRODUCTION
+Staying active and healthy is something we all strive for but for many Muslims, it’s also about honoring our faith. Whether it’s making time to move between prayers, choosing workouts that align with our values, or finding motivation in community, fitness can be more meaningful when it’s connected to who we are.
+That’s where FitMuslim Go! comes in.
+This app is built for Muslims who want to take care of their bodies while staying true to their beliefs. It helps make fitness simple, accessible, and rooted in Islamic principles. Whether you're just getting started or already on your fitness journey, FitMuslim Go! makes it easier to stay motivated, track your progress, and even connect with others on the same path.
+Our goal is to promote a healthy lifestyle, blend faith with fitness, and build a strong, supportive Muslim fitness community one step, one workout, and one prayer at a time.
 
 ### OBJECTIVES
 - Promote a healthy lifestyle among muslims
