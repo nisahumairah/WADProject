@@ -66,3 +66,4 @@ Group Members
 
 
 ### REFERENCES
+- https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/
