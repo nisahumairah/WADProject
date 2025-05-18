@@ -62,4 +62,7 @@ Group Members
 
 ### SEQUENCE DIAGRAM
 
+![diagram-export-18-05-2025-10_56_08-am](https://github.com/user-attachments/assets/3cc4ea4c-ee5a-426d-8487-205dd62db4e0)
+
+
 ### REFERENCES
