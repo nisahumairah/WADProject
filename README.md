@@ -86,7 +86,6 @@ This app is built for Muslims who want to take care of their bodies while stayin
 - Track improvements in workout performance over time.
 
 
-
 **D. Daily Islamic Motivation (Post CRUD)** 
 + **Main Purpose**:To inspire and uplift users on their fitness journey by providing daily Islamic reminders, quotes, or motivational content that promotes discipline, self-care, and spiritual well-being in alignment with Islamic teachings.
   
@@ -104,7 +103,85 @@ This app is built for Muslims who want to take care of their bodies while stayin
    + Viewed/Read publicly <br/>
    + Users can like or bookmark motivational posts
    + Users can share posts to social media or within the app.
-   
+
+
+**C. Nytrition & Meal Planner (Nur Balqis)** <br/>
+
+**Main Purpose:**
+To help users maintain a balanced and halal diet by planning meals, tracking nutritional intake, and aligning food choices with their health and fitness goals—while staying in harmony with Islamic dietary principles.
+
+ **Core Functionalities:**
+
+**1. Meal Planning and Logging (Post CRUD)**
+
+Users can add meals to their daily log, including key nutritional details:
+
+* Meal Type (Breakfast, Lunch, Dinner, Snack)
+* Food Items
+* Portion Size
+* Calories
+* Macronutrients (Carbs, Protein, Fat)
+* Halal Indicator (Yes/No or Certified Source)
+
+**CRUD Operations:**
+
+* **Create** new meal plans and logs
+* **Edit** meals (users can modify their own entries)
+* **Delete** meal entries (user-specific)
+* **Read/View** personal meal logs
+
+**2. Daily/Weekly Nutrition Summary**
+
+Display nutrition breakdown and calorie intake:
+
+* Daily summary of calories and nutrients consumed
+* Weekly trend reports (chart/graph view)
+
+**3. Food Database Integration**
+
+* Built-in food database with common halal food items
+* Ability to add custom food items
+
+**4. Search and Filter Functionality**
+
+Users can easily search through their logs based on:
+
+* Meal type
+* Calorie range
+* Nutritional value (high protein, low carb, etc.)
+
+**5. Edit and Delete Entries**
+
+* Users can modify or remove inaccurate or outdated meal logs.
+* Editable fields: food item, portion, calories, etc.
+
+ **6. Visualization of Nutrition Trends**
+
+Interactive charts to show:
+
+  * Calorie intake over time
+  * Macronutrient balance (Pie or Bar Charts)
+  * Comparison to user-defined goals
+
+**7. Islamic Dietary Motivation (Post CRUD)**
+
+**Main Purpose:**
+To reinforce Islamic values in nutrition by offering daily tips, reminders, and quotes from Qur’an/Hadith related to healthy eating, moderation, and gratitude.
+
+* Admin or authorized users can create motivational posts.
+* Each post includes:
+
+  * Quote/reminder
+  * Short reflection or tip
+  * Visual/image for engagement
+  * Tag (e.g., “Halal Eating,” “Moderation,” “Gratitude”)
+* Posts can be:
+
+  * Created by the author
+  * Edited/Updated by the author
+  * Deleted by the author or admin
+  * Viewed publicly by all users
+* Users can like, bookmark, and share posts within or outside the app.
   
 
 **E. Workout Routine Sharing & Forum (Nur Nisa Humairah)** <br/>
@@ -158,3 +235,4 @@ This app is built for Muslims who want to take care of their bodies while stayin
 
 ### REFERENCES
 - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/
+- https://www.myfitnesspal.com
