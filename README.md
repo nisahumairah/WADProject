@@ -51,6 +51,8 @@ This app is built for Muslims who want to take care of their bodies while stayin
 - Option for users to log out securely.
 - Session data cleared on logout.
       
+
+
 **A. Workout Log Management (Nurul 'Aisyah)** <br/>
 + **Main Purpose**: Provide user with and easy way to log and monitor their workouts progress and make necessary adjustments to their workout routines based on performance to stay on track and motivated.
 
@@ -82,6 +84,7 @@ This app is built for Muslims who want to take care of their bodies while stayin
 **5. Visualization of Progress**
 - Users can view a progress chart / graph
 - Track improvements in workout performance over time.
+
 
 
 **D. Daily Islamic Motivation (Post CRUD)** 
