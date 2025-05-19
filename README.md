@@ -105,7 +105,7 @@ This app is built for Muslims who want to take care of their bodies while stayin
    + Users can share posts to social media or within the app.
 
 
-**C. Nytrition & Meal Planner (Nur Balqis)** <br/>
+**C. Nutrition & Meal Planner (Nur Balqis)** <br/>
 
 **Main Purpose:**
 To help users maintain a balanced and halal diet by planning meals, tracking nutritional intake, and aligning food choices with their health and fitness goals—while staying in harmony with Islamic dietary principles.
