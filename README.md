@@ -31,57 +31,57 @@ This app is built for Muslims who want to take care of their bodies while stayin
 
 **Authentication Functionality**
 **Core Functionalities:** <br/>
-   **1. User Registration**
-      - Users provide email and password.
-      - Email verification sent upon registration.
-      
-   **2. User Login**
-      - Secure email/password login.
-      
-   **3. Password Recovery**
-      - Forgot password option using email.
-      - Password reset link sent to the user's email.
-      - Secure process for password update.
-      
-   **4. Profile Management**
-      - Users can update profile picture and personal info.
-      - Manage fitness goals and track progress.
-      
-   **5. User Logout**
-      - Option for users to log out securely.
-      - Session data cleared on logout.
+**1. User Registration**
+- Users provide email and password.
+- Email verification sent upon registration.
+
+**2. User Login**
+- Secure email/password login.
+
+**3. Password Recovery**
+- Forgot password option using email.
+- Password reset link sent to the user's email.
+- Secure process for password update.
+
+**4. Profile Management**
+- Users can update profile picture and personal info.
+- Manage fitness goals and track progress.
+
+**5. User Logout**
+- Option for users to log out securely.
+- Session data cleared on logout.
       
 **A. Workout Log Management (Nurul 'Aisyah)** <br/>
 + **Main Purpose**: Provide user with and easy way to log and monitor their workouts progress and make necessary adjustments to their workout routines based on performance to stay on track and motivated.
 
 **Core Functionalities:** <br/>
-    **1. Log Workouts (Post CRUD)**
-       - Users can add new workouts, including essential details like:
-            + Workout Type (e.g., Cardio, Strength Training, Yoga)
-            + Duration
-            + Calories Burned 
-            + Sets/Reps 
-       - CRUD Operations:
-            + Create new workout logs
-            + Edit workouts (users can modify their own entries)
-            + Delete workout entries (Access by user only on their own logs)
-    
-  **2. Track Progress and History**
-       - Historical workout data and track improvements (Increase workout duration, reps, or calories burned)
-       - Progress graph
- 
-  **3. Search and Filter**
-       - Searching process through user workout logs by:
-            + Data range
-            + workout type
-            + Duration / Calories Burned
+**1. Log Workouts (Post CRUD)**
+- Users can add new workouts, including essential details like:
+  + Workout Type (e.g., Cardio, Strength Training, Yoga)
+  + Duration
+  + Calories Burned
+  + Sets/Reps 
+- CRUD Operations:
+  + Create new workout logs
+  + Edit workouts (users can modify their own entries)
+  + Delete workout entries (Access by user only on their own logs)
 
-  **4. Edit and Delete Workout Entries**
-       - Users can modify / remove any inaccurate or outdated workout data
+**2. Track Progress and History**
+- Historical workout data and track improvements (Increase workout duration, reps, or calories burned)
+- Progress graph
 
-  **5. Visualization of Progress**
-       - Users can view a progress chart / graph
-       - Track improvements in workout performance over time.
+**3. Search and Filter**
+- Searching process through user workout logs by:
+  + Data range
+  + workout type
+  + Duration / Calories Burned
+
+**4. Edit and Delete Workout Entries**
+- Users can modify / remove any inaccurate or outdated workout data
+
+**5. Visualization of Progress**
+- Users can view a progress chart / graph
+- Track improvements in workout performance over time.
 
 
 **D. Daily Islamic Motivation (Post CRUD)** 
