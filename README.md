@@ -25,7 +25,7 @@ This app is built for Muslims who want to take care of their bodies while stayin
 ### FUNCTION AND FUNCTIONALITIES
 **A. Workout Log Management (Nurul 'Aisyah)** <br/>
 **B. Goal & Progress Dashboard (Nurfathin Atirah)** <br/>
-**C. Nutrition & Meal Planner** <br/>
+**C. Nutrition & Meal Planner (Nur Balqis)** <br/>
 **D. Daily Islamic Motivation (Nur Alia Alina)** <br/>
 **E. Workout Routine Sharing & Forum (Nur Nisa Humairah)** <br/>
 
