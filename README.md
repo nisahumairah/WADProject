@@ -1,12 +1,12 @@
 # FitMuslim GO Proposal
 ## SECTION 1 - GROUP C
 Group Members
-| Name     | Matric No       |
-| ------------- |:-------------:|
-| Nur Nisa Humairah Binti Rosdi        | 2122408 |
-| Nur Alia Alina Binti Abdul Rahman    | 2223988     | 
-| Nur Balqis binti Sazalee             | 2218348  |
-| zebra stripes | are neat      |
+| Name                                 | Matric No |
+| ------------------------------------ |:---------:|
+| Nur Nisa Humairah Binti Rosdi        |  2122408  |
+| Nur Alia Alina Binti Abdul Rahman    |  2223988  | 
+| Nur Balqis binti Sazalee             |  2218348  |
+| Nurul 'Aisyah Binti Ani @ Sani       |  2210022  |
 | zebra stripes | are neat      |
 
 ### INTRODUCTION
@@ -23,16 +23,70 @@ This app is built for Muslims who want to take care of their bodies while stayin
 
 
 ### FUNCTION AND FUNCTIONALITIES
-**A. Workout Log Management** <br/>
+**A. Workout Log Management (Nurul 'Aisyah)** <br/>
 **B. Goal & Progress Dashboard (Nurfathin Atirah)** <br/>
 **C. Nutrition & Meal Planner** <br/>
 **D. Daily Islamic Motivation (Nur Alia Alina)** <br/>
+**E. Workout Routine Sharing & Forum (Nur Nisa Humairah)** <br/>
 
+**Authentication Functionality**
+**Core Functionalities:** <br/>
+   **1. User Registration**
+      - Users provide email and password.
+      - Email verification sent upon registration.
+      
+   **2. User Login**
+      - Secure email/password login.
+      
+   **3. Password Recovery**
+      - Forgot password option using email.
+      - Password reset link sent to the user's email.
+      - Secure process for password update.
+      
+   **4. Profile Management**
+      - Users can update profile picture and personal info.
+      - Manage fitness goals and track progress.
+      
+   **5. User Logout**
+      - Option for users to log out securely.
+      - Session data cleared on logout.
+      
+**A. Workout Log Management (Nurul 'Aisyah)** <br/>
++ **Main Purpose**: Provide user with and easy way to log and monitor their workouts progress and make necessary adjustments to their workout routines based on performance to stay on track and motivated.
+
+**Core Functionalities:** <br/>
+    **1. Log Workouts (Post CRUD)**
+       - Users can add new workouts, including essential details like:
+            + Workout Type (e.g., Cardio, Strength Training, Yoga)
+            + Duration
+            + Calories Burned 
+            + Sets/Reps 
+       - CRUD Operations:
+            + Create new workout logs
+            + Edit workouts (users can modify their own entries)
+            + Delete workout entries (Access by user only on their own logs)
+    
+  **2. Track Progress and History**
+       - Historical workout data and track improvements (Increase workout duration, reps, or calories burned)
+       - Progress graph
+ 
+  **3. Search and Filter**
+       - Searching process through user workout logs by:
+            + Data range
+            + workout type
+            + Duration / Calories Burned
+
+  **4. Edit and Delete Workout Entries**
+       - Users can modify / remove any inaccurate or outdated workout data
+
+  **5. Visualization of Progress**
+       - Users can view a progress chart / graph
+       - Track improvements in workout performance over time.
+
+
+**D. Daily Islamic Motivation (Post CRUD)** 
 + **Main Purpose**:To inspire and uplift users on their fitness journey by providing daily Islamic reminders, quotes, or motivational content that promotes discipline, self-care, and spiritual well-being in alignment with Islamic teachings.
   
-**Core Functionalities:** <br/>  
-
-**1. Daily Islamic Motivation (Post CRUD)** 
 - Admin or authorized users can create daily motivational posts.
 - Each post includes:
    + A short Islamic quote or reminder (e.g., from the Qur'an or Hadith)
@@ -51,7 +105,6 @@ This app is built for Muslims who want to take care of their bodies while stayin
   
 
 **E. Workout Routine Sharing & Forum (Nur Nisa Humairah)** <br/>
-
 + **Main Purpose**: To allow users to share their workout routines, engage in discussions, and provide support or motivation to other users. <br/>
 
 **Core Functionalities:** <br/>
@@ -90,6 +143,8 @@ This app is built for Muslims who want to take care of their bodies while stayin
    + Their shared routines
    + Forum activity (topics & replies
    + Total likes and comments received  <br/>
+
+
 
 ### ENTITY RELATIONSHIP DIAGRAM (ERD)
 
