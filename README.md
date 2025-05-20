@@ -213,14 +213,27 @@ To reinforce Islamic values in nutrition by offering daily tips, reminders, and 
    + Forum activity (topics & replies
    + Total likes and comments received  <br/>
 
-
-
 ### ENTITY RELATIONSHIP DIAGRAM (ERD)
 
 ### SEQUENCE DIAGRAM
 
 ![diagram-export-18-05-2025-10_56_08-am](https://github.com/user-attachments/assets/3cc4ea4c-ee5a-426d-8487-205dd62db4e0)
 
+### MOCKUPS
+1. Dashboard
+![Screenshot_20-5-2025_85922_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/6ec4a0c7-ec7d-41c6-9bf4-55e6d3c17804)
+2. Workout Tracker
+![Screenshot_20-5-2025_85930_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/0246e349-cb3a-420e-8d45-56097ec5ce0c)
+3. Nutrition Tracker
+![Screenshot_20-5-2025_85938_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/f0fcb9d7-7f3c-4484-bfa7-d3b918c645a3)
+4. Goal and Progress
+![Screenshot_20-5-2025_85746_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/53ae2473-b3ba-4108-9a78-d612fd88ad5b)
+5. Community Forum
+![Screenshot_20-5-2025_85755_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/a25758ca-dcf1-4572-94b1-7a16c91b93de)
+6. Quran
+![Screenshot_20-5-2025_8584_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/198279d1-720e-4934-aa35-6972f7dfa507)
+7. Hadith
+![Screenshot_20-5-2025_85812_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/0d2a730b-8f6d-43a8-baaa-9553b6f4b7c5)
 
 ### REFERENCES
 - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/
