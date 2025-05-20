@@ -7,30 +7,22 @@ Group Members
 | Nur Alia Alina Binti Abdul Rahman    |  2223988  | 
 | Nur Balqis binti Sazalee             |  2218348  |
 | Nurul 'Aisyah Binti Ani @ Sani       |  2210022  |
-| zebra stripes | are neat      |
+| Nurfathin Atirah Binti Mohammad Udin |  2118168  |
 
-### INTRODUCTION
+## INTRODUCTION
 Staying active and healthy is something we all strive for but for many Muslims, it’s also about honoring our faith. Whether it’s making time to move between prayers, choosing workouts that align with our values, or finding motivation in community, fitness can be more meaningful when it’s connected to who we are.
 That’s where FitMuslim Go! comes in.
 This app is built for Muslims who want to take care of their bodies while staying true to their beliefs. It helps make fitness simple, accessible, and rooted in Islamic principles. Whether you're just getting started or already on your fitness journey, FitMuslim Go! makes it easier to stay motivated, track your progress, and even connect with others on the same path.
 
-### OBJECTIVES
+## OBJECTIVES
 - Promote a healthy lifestyle among muslims
 - integrate faith with fitness
 - ensure easy access and usability
 - encourage community engagement and support
-  
 
-
-### FUNCTION AND FUNCTIONALITIES
-**A. Workout Log Management (Nurul 'Aisyah)** <br/>
-**B. Goal & Progress Dashboard (Nurfathin Atirah)** <br/>
-**C. Nutrition & Meal Planner (Nur Balqis)** <br/>
-**D. Daily Islamic Motivation (Nur Alia Alina)** <br/>
-**E. Workout Routine Sharing & Forum (Nur Nisa Humairah)** <br/>
-
-**Authentication Functionality**
-**Core Functionalities:** <br/>
+## FUNCTION AND FUNCTIONALITIES
+### A. Authentication Functionality <br/>
+#### Core Functionalities: <br/>
 **1. User Registration**
 - Users provide email and password.
 - Email verification sent upon registration.
@@ -50,13 +42,12 @@ This app is built for Muslims who want to take care of their bodies while stayin
 **5. User Logout**
 - Option for users to log out securely.
 - Session data cleared on logout.
-      
 
 
-**A. Workout Log Management (Nurul 'Aisyah)** <br/>
+### B. Workout Log Management (Nurul 'Aisyah) <br/>
 + **Main Purpose**: Provide user with and easy way to log and monitor their workouts progress and make necessary adjustments to their workout routines based on performance to stay on track and motivated.
 
-**Core Functionalities:** <br/>
+#### Core Functionalities: <br/>
 **1. Log Workouts (Post CRUD)**
 - Users can add new workouts, including essential details like:
   + Workout Type (e.g., Cardio, Strength Training, Yoga)
@@ -86,27 +77,9 @@ This app is built for Muslims who want to take care of their bodies while stayin
 - Track improvements in workout performance over time.
 
 
-**D. Daily Islamic Motivation (Post CRUD)** 
-+ **Main Purpose**:To inspire and uplift users on their fitness journey by providing daily Islamic reminders, quotes, or motivational content that promotes discipline, self-care, and spiritual well-being in alignment with Islamic teachings.
-  
-- Admin or authorized users can create daily motivational posts.
-- Each post includes:
-   + A short Islamic quote or reminder (e.g., from the Qur'an or Hadith)
-   + Optional description or reflection
-   + Image or visual design for aesthetic appeal
-   + Difficulties level (beginner, intermediate, advanced)
-   + Category/tag (e.g., “Discipline,” “Gratitude,” “Strength”)
-- Post can be:
-   + Created  (only by the author)
-   + Updated/Edited (only by the author)
-   + Deleted (only by the author or admin)
-   + Viewed/Read publicly <br/>
-   + Users can like or bookmark motivational posts
-   + Users can share posts to social media or within the app.
+### C. Goal & Progress Dashboard (Nurfathin Atirah) <br/>
 
-
-**C. Nutrition & Meal Planner (Nur Balqis)** <br/>
-
+### D. Nutrition & Meal Planner (Nur Balqis) <br/>
 **Main Purpose:**
 To help users maintain a balanced and halal diet by planning meals, tracking nutritional intake, and aligning food choices with their health and fitness goals—while staying in harmony with Islamic dietary principles.
 
@@ -182,9 +155,26 @@ To reinforce Islamic values in nutrition by offering daily tips, reminders, and 
   * Deleted by the author or admin
   * Viewed publicly by all users
 * Users can like, bookmark, and share posts within or outside the app.
-  
 
-**E. Workout Routine Sharing & Forum (Nur Nisa Humairah)** <br/>
+### E. Daily Islamic Motivation (Nur Alia Alina) <br/>
++ **Main Purpose**:To inspire and uplift users on their fitness journey by providing daily Islamic reminders, quotes, or motivational content that promotes discipline, self-care, and spiritual well-being in alignment with Islamic teachings.
+  
+- Admin or authorized users can create daily motivational posts.
+- Each post includes:
+   + A short Islamic quote or reminder (e.g., from the Qur'an or Hadith)
+   + Optional description or reflection
+   + Image or visual design for aesthetic appeal
+   + Difficulties level (beginner, intermediate, advanced)
+   + Category/tag (e.g., “Discipline,” “Gratitude,” “Strength”)
+- Post can be:
+   + Created  (only by the author)
+   + Updated/Edited (only by the author)
+   + Deleted (only by the author or admin)
+   + Viewed/Read publicly <br/>
+   + Users can like or bookmark motivational posts
+   + Users can share posts to social media or within the app.
+
+### F. Workout Routine Sharing & Forum (Nur Nisa Humairah) <br/>
 + **Main Purpose**: To allow users to share their workout routines, engage in discussions, and provide support or motivation to other users. <br/>
 
 **Core Functionalities:** <br/>
@@ -203,7 +193,6 @@ To reinforce Islamic values in nutrition by offering daily tips, reminders, and 
    + Deleted (only by the author or admin)
    + Viewed publicly <br/>
    
-
 **2. Like and Comment System**
 - Users can like a post
 - Users can leave comments
