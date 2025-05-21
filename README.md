@@ -276,7 +276,7 @@ To reinforce Islamic values in nutrition by offering daily tips, reminders, and 
    + Total likes and comments received  <br/>
 
 ### ENTITY RELATIONSHIP DIAGRAM (ERD)
-![ERD](https://imgur.com/a/2jmMWAX)
+![Image](https://github.com/user-attachments/assets/25643959-0457-4529-851c-e320e7eb23d0)
 
 ### SEQUENCE DIAGRAM
 
