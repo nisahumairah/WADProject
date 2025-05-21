@@ -81,86 +81,65 @@ This app is built for Muslims who want to take care of their bodies while stayin
 **Main Purpose:**
 To empower users to set personal fitness goals and visually track their progress over time, aligning with both physical health aspirations and faith-driven discipline. This feature ensures users stay motivated by providing clear, measurable outcomes in their fitness journey.
 
-###Core Functionalities:
+**Core Functionalities:**
 
 **1. Goal Setting (Post CRUD)**
 Users can create and manage their own fitness goals. Each goal includes:
 
-Goal Type (e.g., Weight Loss, Strength, Endurance, Steps/Movement Goals, Consistency)
-
-Goal Title (custom name for easy recognition)
-
-Target Metric (e.g., weight in kg, number of steps, workout hours/week)
-
-Start & Target Dates
-
-Current Progress Input
+- Goal Type (e.g., Weight Loss, Strength, Endurance, Steps/Movement Goals, Consistency)
+- Goal Title (custom name for easy recognition)
+- Target Metric (e.g., weight in kg, number of steps, workout hours/week)
+- Start & Target Dates
+- Current Progress Input
 
 
 **CRUD Operations:**
 
-Create new goals
-
-Read/View all set goals (active/inactive)
-
-Update/Edit existing goals (e.g., change target, adjust timeline)
-
-Delete goals (if no longer relevant)
+- Create new goals
+- Read/View all set goals (active/inactive)
+- Update/Edit existing goals (e.g., change target, adjust timeline)
+- Delete goals (if no longer relevant)
 
 **2. Visual Progress Tracker**
-Real-time graphical display of progress, helping users stay accountable and encouraged:
 
-Progress Bars and Completion Percentage
-
-Graph Charts (Line or Bar) showing growth over time
-
-Visual indicators for goal milestones or halfway marks
+- Real-time graphical display of progress, helping users stay accountable and encouraged:
+- Progress Bars and Completion Percentage
+- Graph Charts (Line or Bar) showing growth over time
+- Visual indicators for goal milestones or halfway marks
 
 **3. Goal Achievement Summary**
-Once a goal is completed, users receive a visual summary:
-
-Badge/Certificate of Completion
-
-Date of Achievement
-
-Before vs After Comparison (optional stats or images)
-
-Shareable to social media or community feed
+- Once a goal is completed, users receive a visual summary:
+- Badge/Certificate of Completion
+- Date of Achievement
+- Before vs After Comparison (optional stats or images)
+- Shareable to social media or community feed
 
 **4. Reminders & Notifications**
 Users can set reminders for:
 
-Progress check-ins (daily/weekly)
-
-Goal deadlines approaching
-
-Encouragement/motivation nudges ("You're halfway there!")
+- Progress check-ins (daily/weekly)
+- Goal deadlines approaching
+- Encouragement/motivation nudges ("You're halfway there!")
 
 **5. Integration with Other Modules**
 The dashboard pulls data from:
 
-Workout Log (to track time, reps, duration)
-
-Nutrition Planner (to help with weight or dietary goals)
-
-Daily Motivation Posts (to keep morale high during goal pursuit)
+- Workout Log (to track time, reps, duration)
+- Nutrition Planner (to help with weight or dietary goals)
+- Daily Motivation Posts (to keep morale high during goal pursuit)
 
 **6. Filter and Sort Goals**
 Users can filter goals by:
 
-Status (active, completed, overdue)
-
-Goal Type (weight, strength, stamina, etc.)
-
-Timeframe (weekly, monthly, yearly)
+- Status (active, completed, overdue)
+- Goal Type (weight, strength, stamina, etc.)
+- Timeframe (weekly, monthly, yearly)
 
 Sorting options:
 
-By date created
-
-By progress percentage
-
-By target deadline
+- By date created
+- By progress percentage
+- By target deadline
 
 ### D. Nutrition & Meal Planner (Nur Balqis) <br/>
 **Main Purpose:**
