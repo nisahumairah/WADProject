@@ -112,7 +112,6 @@ Users can create and manage their own fitness goals. Each goal includes:
 - Badge/Certificate of Completion
 - Date of Achievement
 - Before vs After Comparison (optional stats or images)
-- Shareable to social media or community feed
 
 **4. Reminders & Notifications**
 Users can set reminders for:
@@ -121,14 +120,8 @@ Users can set reminders for:
 - Goal deadlines approaching
 - Encouragement/motivation nudges ("You're halfway there!")
 
-**5. Integration with Other Modules**
-The dashboard pulls data from:
 
-- Workout Log (to track time, reps, duration)
-- Nutrition Planner (to help with weight or dietary goals)
-- Daily Motivation Posts (to keep morale high during goal pursuit)
-
-**6. Filter and Sort Goals**
+**5. Filter and Sort Goals**
 Users can filter goals by:
 
 - Status (active, completed, overdue)
