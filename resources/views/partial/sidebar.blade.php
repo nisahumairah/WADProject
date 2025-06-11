@@ -63,13 +63,13 @@
                     <span class="badge badge-count">50</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="#">
-                    <i class="la la-th"></i>
-                    <p>Tables</p>
-                    <span class="badge badge-count">6</span>
-                </a>
-            </li>
+            <li class="nav-item {{ request()->is('goals*') ? 'active' : '' }}">
+    <a href="{{ route('goals.index') }}">
+        <i class="la la-bullseye"></i>
+        <p>Goals & Progress</p>
+    </a>
+</li>
+
             <li class="nav-item">
                 <a href="#">
                     <i class="la la-bell"></i>
