@@ -1,18 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GoalController;
+use App\Http\Controllers\WorkoutController;
 use App\Http\Controllers\WorkoutPostController;
 use App\Http\Controllers\ForumController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\LikeController;
 use App\Http\Controllers\AuthController;
 
-
 // Default Route
 Route::get('/', function () {
     return view('auth.landing');
 });
-
 
 // Authentication Routes
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
@@ -48,6 +48,15 @@ Route::get('/community', function () {
     return view('community.index', compact('trendingTopics', 'popularWorkouts'));
 })->name('community.index');
 
+// Goal-related routes
+Route::resource('goals', GoalController::class);
+Route::post('/goals/update-weight', [GoalController::class, 'updateWeight'])->name('goals.updateWeight');
+Route::post('/goals/update-workout', [GoalController::class, 'updateWorkout'])->name('goals.updateWorkout');
+Route::post('/goals/update-water', [GoalController::class, 'updateWater'])->name('goals.updateWater');
+
+// Workout-related routes
+Route::resource('workouts', WorkoutController::class);
+Route::get('workouts/progress', [WorkoutController::class, 'progress'])->name('workouts.progress');
 
 // Community Routes
 Route::prefix('community')->group(function () {
@@ -66,8 +75,6 @@ Route::prefix('community')->group(function () {
     Route::delete('/discussions/{forumTopic}', [ForumController::class, 'destroy'])->name('community.discussions.destroy');
     Route::post('/discussions/replies/{reply}/mark-helpful', [ForumController::class, 'markHelpfulReply'])->name('community.discussions.replies.mark-helpful');
 
-
-
     // Comments
     Route::post('/workouts/{workoutPost}/comments', [CommentController::class, 'storeWorkoutComment'])->name('community.workouts.comments.store');
     Route::post('/discussions/{forumTopic}/comments', [CommentController::class, 'storeForumComment'])->name('community.discussions.comments.store');
@@ -80,6 +87,4 @@ Route::prefix('community')->group(function () {
     Route::get('/workouts/{workoutPost}/edit', [WorkoutPostController::class, 'edit'])->name('community.workouts.edit');
     Route::put('/workouts/{workoutPost}', [WorkoutPostController::class, 'update'])->name('community.workouts.update');
 });
-
-
 

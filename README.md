@@ -112,7 +112,6 @@ Users can create and manage their own fitness goals. Each goal includes:
 - Badge/Certificate of Completion
 - Date of Achievement
 - Before vs After Comparison (optional stats or images)
-- Shareable to social media or community feed
 
 **4. Reminders & Notifications**
 Users can set reminders for:
@@ -121,14 +120,8 @@ Users can set reminders for:
 - Goal deadlines approaching
 - Encouragement/motivation nudges ("You're halfway there!")
 
-**5. Integration with Other Modules**
-The dashboard pulls data from:
 
-- Workout Log (to track time, reps, duration)
-- Nutrition Planner (to help with weight or dietary goals)
-- Daily Motivation Posts (to keep morale high during goal pursuit)
-
-**6. Filter and Sort Goals**
+**5. Filter and Sort Goals**
 Users can filter goals by:
 
 - Status (active, completed, overdue)
@@ -252,28 +245,17 @@ To reinforce Islamic values in nutrition by offering daily tips, reminders, and 
 - Post can be:
    + Created
    + Edited (only by the author)
-   + Deleted (only by the author or admin)
-   + Viewed publicly <br/>
+   + Deleted (only by the author or admin)<br/>
    
 **2. Like and Comment System**
 - Users can like a post
 - Users can leave comments
 - Users can edit or delete their own comments <br/>
 
-**3. Category & Tag Filtering**
-- Filter posts by difficulty level, tags (e.g., "Core", "Beginner", "Fat Loss")
-- Search function by keyword  <br/>
-
-**4. Forum Section (Q&A Style)**
+**3. Forum Section (Q&A Style)**
 - Users can create topics/questions (e.g., “How to build stamina for futsal?”)
 - Others can reply to the topic
 - Replies can be liked or marked as helpful by the original poster  <br/>
-
-**5. User Profile Integration**
-- Each user has a public profile showing:
-   + Their shared routines
-   + Forum activity (topics & replies
-   + Total likes and comments received  <br/>
 
 ### ENTITY RELATIONSHIP DIAGRAM (ERD)
 ![Image](https://github.com/user-attachments/assets/25643959-0457-4529-851c-e320e7eb23d0)

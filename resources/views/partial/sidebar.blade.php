@@ -47,42 +47,37 @@
                 <a href="{{ route('dashboard') }}">
                     <i class="la la-dashboard"></i>
                     <p>Dashboard</p>
-                    {{-- <span class="badge badge-count">5</span> --}}
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="#">
-                    <i class="la la-heartbeat"></i>
-                    <p>Workout</p>
-                    {{-- <span class="badge badge-count">14</span> --}}
+            <li class="nav-item {{ request()->is('workouts') ? 'active' : '' }}">
+                <a href="{{ route('workouts.index') }}">
+                    <i class="la la-table"></i>
+                    <p>Workout Tracker</p>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a href="#">
                     <i class="la la-apple"></i>
                     <p>Nutrition</p>
-                    {{-- <span class="badge badge-count">50</span> --}}
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="#">
-                    <i class="la la-bullseye"></i>
-                    <p>Goals & Progress</p>
-                    {{-- <span class="badge badge-count">6</span> --}}
-                </a>
+            <li class="nav-item {{ request()->is('goals*') ? 'active' : '' }}">
+              <a href="{{ route('goals.index') }}">
+                <i class="la la-bullseye"></i>
+                <p>Goals & Progress</p>
+              </a>
             </li>
             <li class="nav-item">
                 <a href="#">
                     <i class="la la-sun-o"></i>
                     <p>Daily Motivation</p>
-                    {{-- <span class="badge badge-success">3</span> --}}
                 </a>
             </li>
             <li class="nav-item {{ request()->is('community*') ? 'active' : '' }}">
                 <a href="{{ route('community.index') }}">
                     <i class="la la-users"></i>
                     <p>Community</p>
-                    {{-- <span class="badge badge-danger">25</span> --}}
                 </a>
             </li>
         </ul>
