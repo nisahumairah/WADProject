@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Ready Bootstrap Dashboard')</title>
+    <title>@yield('title', 'FitMuslim GO')</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/img/favicon.ico') }}" type="image/x-icon">
@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/ready.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/demo.css') }}">
+
+    <!-- Bootstrap-select CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+
 
     @yield('styles')
 </head>
@@ -62,6 +66,9 @@
     <!-- Main JS -->
     <script src="{{ asset('assets/js/ready.min.js') }}"></script>
     <script src="{{ asset('assets/js/demo.js') }}"></script>
+
+    <!-- Bootstrap-select JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
 
     @yield('scripts')
 </body>
