@@ -43,6 +43,12 @@
                     <span class="badge badge-count">5</span>
                 </a>
             </li>
+            <li class="nav-item {{ request()->is('workouts') ? 'active' : '' }}">
+                <a href="{{ route('workouts.index') }}">
+                    <i class="la la-table"></i>
+                    <p>Workout Tracker</p>
+                </a>
+            </li>
             <li class="nav-item">
                 <a href="#">
                     <i class="la la-table"></i>
