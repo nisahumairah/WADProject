@@ -2,32 +2,39 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\WorkoutPost;
+use App\Models\ForumTopic;
 use App\Models\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
-    public function storeWorkoutComment(Request $request, $workoutPostId)
+    public function storeWorkoutComment(Request $request, WorkoutPost $workoutPost)
     {
-        $request->validate(['content' => 'required|string|max:1000']);
-
-        $comment = auth()->user()->workoutComments()->create([
-            'workout_post_id' => $workoutPostId,
-            'content' => $request->content
+        $request->validate([
+            'content' => 'required|string|max:1000'
         ]);
 
-        return back()->with('success', 'Comment added!');
+        $comment = $workoutPost->comments()->create([
+            'user_id' => Auth::id(), // Changed from auth()->id()
+            'content' => $request->input('content') // Changed from $request->content
+        ]);
+
+        return back()->with('success', 'Comment added successfully!');
     }
 
-    public function storeForumComment(Request $request, $forumTopicId)
+    public function storeForumComment(Request $request, ForumTopic $forumTopic)
     {
-        $request->validate(['content' => 'required|string|max:1000']);
-
-        $comment = auth()->user()->forumReplies()->create([
-            'forum_topic_id' => $forumTopicId,
-            'content' => $request->content
+        $request->validate([
+            'content' => 'required|string|max:1000'
         ]);
 
-        return back()->with('success', 'Reply added!');
+        $comment = $forumTopic->replies()->create([
+            'user_id' => Auth::id(), // Changed from auth()->id()
+            'content' => $request->input('content') // Changed from $request->content
+        ]);
+
+        return back()->with('success', 'Reply added successfully!');
     }
 }

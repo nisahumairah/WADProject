@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use App\Models\User;
 
 class ForumTopic extends Model
 {
@@ -22,13 +23,13 @@ class ForumTopic extends Model
     ];
 
     // Relationship with User
-    public function user(): BelongsTo
+    public function user()
     {
-        return $this->belongsTo(User::class);
+       return $this->belongsTo(User::class);
     }
 
     // Relationship with Replies
-    public function replies(): HasMany
+    public function replies()
     {
         return $this->hasMany(ForumReply::class);
     }
@@ -50,4 +51,5 @@ class ForumTopic extends Model
     {
         $this->increment('views');
     }
+
 }

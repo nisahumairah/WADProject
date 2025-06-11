@@ -21,10 +21,6 @@ class WorkoutPost extends Model
         'media_path'
     ];
 
-    protected $casts = [
-        'targeted_muscles' => 'array',
-    ];
-
     // Relationship with User
     public function user(): BelongsTo
     {

@@ -19,7 +19,7 @@ class ForumReply extends Model
     ];
 
     // Relationship with User
-    public function user(): BelongsTo
+    public function user()
     {
         return $this->belongsTo(User::class);
     }
@@ -34,6 +34,12 @@ class ForumReply extends Model
     public function likes(): MorphMany
     {
         return $this->morphMany(Like::class, 'likeable');
+    }
+
+    // Helper method to check if user liked the reply
+    public function isLikedBy($user)
+    {
+    return $this->likes()->where('user_id', $user->id)->exists();
     }
 
     // Mark as helpful
