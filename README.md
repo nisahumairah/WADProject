@@ -251,7 +251,9 @@ Users can manage their daily meals through a structured log:
 
 ### CHALLENGES
  - Integrating different modules developed by various team members due to differences in coding styles, database structures, and logic flows, requiring effective coordination and consistent collaboration throughout the project.
- - getting the motivations.index when trying to run due to confusion with the existence of table or name of the file
+ - Getting the motivations.index when trying to run due to confusion with the existence of table or name of the file
+ - There was a conflict when implement the authentication with Laravel Jetstream, where caused several errors and issues throughtout the entire project. As a result our team encountered by manually resolve and implement the necessary changes ourselves.
+ - Our team faced a situations where everything worked excellently on our own branches on GitHub without any errors. But once branches were merged, conflicts and errors appear which leading to problems that affected the final product.
 
 ### REFERENCES
 - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/
