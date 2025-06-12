@@ -259,12 +259,14 @@ Users can manage their daily meals through a structured log:
 3. Nutrition Tracker
 ![image](https://github.com/user-attachments/assets/ed17e743-380e-4d01-a9c2-5f808c0d8d58)
 
-
 4. Goal and Progress
 ![image](https://github.com/user-attachments/assets/8098bf04-54b4-46cc-bd13-f02fc536cf9a)
 
 5. Daily Motivation
-//image
+   - Original
+![Screenshot 2025-06-12 161948](https://github.com/user-attachments/assets/71406c33-4f8e-469c-b832-db482bc1fc2b)
+
+   - Updated
 ![image](https://github.com/user-attachments/assets/943f3b51-2ded-4a70-8d4e-3f44cf726f1b)
 
 6. Community Forum
