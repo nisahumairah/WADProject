@@ -265,7 +265,7 @@ Users can manage their daily meals through a structured log:
 
 5. Daily Motivation
 //image
- ![Screenshot 2025-06-12 161948](https://github.com/user-attachments/assets/d88c8f8b-729e-4a80-892c-afb39bd2b238)
+![image](https://github.com/user-attachments/assets/943f3b51-2ded-4a70-8d4e-3f44cf726f1b)
 
 6. Community Forum
    - Community Index Page
