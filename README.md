@@ -229,6 +229,14 @@ Users can manage their daily meals through a structured log:
 
 ![diagram-export-18-05-2025-10_56_08-am](https://github.com/user-attachments/assets/3cc4ea4c-ee5a-426d-8487-205dd62db4e0)
 
+### MOCKUPS
+1. Dashboard
+2. Workout Tracker
+3. Nutrition Tracker
+4. Goal and Progress
+5. Daily Motivation
+6. Community Forum
+
 ### SITE SCREENSHOT
 1. Dashboard
 ![image](https://github.com/user-attachments/assets/2d3b729b-4955-42f3-a3fa-8d2283b2d244)
