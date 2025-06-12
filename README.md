@@ -72,10 +72,6 @@ This app is built for Muslims who want to take care of their bodies while stayin
 **4. Edit and Delete Workout Entries**
 - Users can modify / remove any inaccurate or outdated workout data
 
-**5. Visualization of Progress**
-- Users can view a progress chart / graph
-- Track improvements in workout performance over time.
-
 
 ### C. Goal & Progress Dashboard (Nurfathin Atirah) <br/>
 **Main Purpose:**
@@ -134,82 +130,51 @@ Sorting options:
 - By progress percentage
 - By target deadline
 
-### D. Nutrition & Meal Planner (Nur Balqis) <br/>
+
+### D. Nutrition & Meal Planner (Nur Balqis)  <br/>
+
 **Main Purpose:**
 To help users maintain a balanced and halal diet by planning meals, tracking nutritional intake, and aligning food choices with their health and fitness goals—while staying in harmony with Islamic dietary principles.
 
- **Core Functionalities:**
+### Core Functionalities:
 
-**1. Meal Planning and Logging (Post CRUD)**
+#### **1. Nutrition Tracker Dashboard**
 
-Users can add meals to their daily log, including key nutritional details:
+Visually displays daily nutritional intake with color-coded indicators:
 
-* Meal Type (Breakfast, Lunch, Dinner, Snack)
-* Food Items
+* **Macronutrient Boxes**:
+
+  * **Protein**: e.g., 65g / 120g (green)
+  * **Carbs**: e.g., 180g / 300g (orange)
+  * **Fats**: e.g., 40g / 70g (red)
+* **Donut Chart**:
+
+  * Real-time visual of Protein, Carbs, and Fats proportions.
+* **Water Intake Tracker**:
+
+  * Emoji-based water glasses.
+  * `+ / -` buttons to log consumption (e.g., 3 out of 8 glasses).
+
+#### **2. Meal Planning and Logging (CRUD System)**
+
+Users can manage their daily meals through a structured log:
+
+**Meal Entry Fields:**
+
+* Meal Type: *Breakfast, Lunch, Dinner, Snack*
+* Food Items: *Multiple entries possible (e.g., Bread, Peanut Butter)*
 * Portion Size
 * Calories
-* Macronutrients (Carbs, Protein, Fat)
-* Halal Indicator (Yes/No or Certified Source)
+* Macronutrients: *Carbs, Protein, Fat*
+* Halal Indicator: *Yes/No or Certified Source*
 
 **CRUD Operations:**
 
-* **Create** new meal plans and logs
-* **Edit** meals (users can modify their own entries)
-* **Delete** meal entries (user-specific)
-* **Read/View** personal meal logs
+**Create**: Add new meal logs with nutritional and halal details.
+**Edit**: Modify existing meals (user-specific).
+**Delete**: Remove logged meals.
+**View**: See a full list under "Today's Meals" (table view).
 
-**2. Daily/Weekly Nutrition Summary**
-
-Display nutrition breakdown and calorie intake:
-
-* Daily summary of calories and nutrients consumed
-* Weekly trend reports (chart/graph view)
-
-**3. Food Database Integration**
-
-* Built-in food database with common halal food items
-* Ability to add custom food items
-
-**4. Search and Filter Functionality**
-
-Users can easily search through their logs based on:
-
-* Meal type
-* Calorie range
-* Nutritional value (high protein, low carb, etc.)
-
-**5. Edit and Delete Entries**
-
-* Users can modify or remove inaccurate or outdated meal logs.
-* Editable fields: food item, portion, calories, etc.
-
- **6. Visualization of Nutrition Trends**
-
-Interactive charts to show:
-
-  * Calorie intake over time
-  * Macronutrient balance (Pie or Bar Charts)
-  * Comparison to user-defined goals
-
-**7. Islamic Dietary Motivation (Post CRUD)**
-
-**Main Purpose:**
-To reinforce Islamic values in nutrition by offering daily tips, reminders, and quotes from Qur’an/Hadith related to healthy eating, moderation, and gratitude.
-
-* Admin or authorized users can create motivational posts.
-* Each post includes:
-
-  * Quote/reminder
-  * Short reflection or tip
-  * Visual/image for engagement
-  * Tag (e.g., “Halal Eating,” “Moderation,” “Gratitude”)
-* Posts can be:
-
-  * Created by the author
-  * Edited/Updated by the author
-  * Deleted by the author or admin
-  * Viewed publicly by all users
-* Users can like, bookmark, and share posts within or outside the app.
 
 ### E. Daily Islamic Motivation (Nur Alia Alina) <br/>
 + **Main Purpose**:To inspire and uplift users on their fitness journey by providing daily Islamic reminders, quotes, or motivational content that promotes discipline, self-care, and spiritual well-being in alignment with Islamic teachings.
@@ -266,19 +231,57 @@ To reinforce Islamic values in nutrition by offering daily tips, reminders, and 
 
 ### MOCKUPS
 1. Dashboard
-![Screenshot_20-5-2025_85922_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/6ec4a0c7-ec7d-41c6-9bf4-55e6d3c17804)
+![image](https://github.com/user-attachments/assets/eb9b6b7f-513f-4fe4-8f5c-7e49a8791187)
+
 2. Workout Tracker
-![Screenshot_20-5-2025_85930_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/0246e349-cb3a-420e-8d45-56097ec5ce0c)
+![image](https://github.com/user-attachments/assets/ca47fb33-ec03-4be5-a514-80ff95e924e9)
+
 3. Nutrition Tracker
-![Screenshot_20-5-2025_85938_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/f0fcb9d7-7f3c-4484-bfa7-d3b918c645a3)
+![image](https://github.com/user-attachments/assets/bcf5fb1c-205b-4400-9b26-5b61ca888f2d)
+
 4. Goal and Progress
-![Screenshot_20-5-2025_85746_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/53ae2473-b3ba-4108-9a78-d612fd88ad5b)
-5. Community Forum
-![Screenshot_20-5-2025_85755_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/a25758ca-dcf1-4572-94b1-7a16c91b93de)
-6. Quran
-![Screenshot_20-5-2025_8584_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/198279d1-720e-4934-aa35-6972f7dfa507)
-7. Hadith
-![Screenshot_20-5-2025_85812_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/0d2a730b-8f6d-43a8-baaa-9553b6f4b7c5)
+![image](https://github.com/user-attachments/assets/3fb2f7c0-07a8-4961-b4f5-3f8c10763b4d)
+
+5. Daily Motivation
+![image](https://github.com/user-attachments/assets/c445dd52-f869-4028-9535-70e5524de40d)
+![image](https://github.com/user-attachments/assets/28447745-f8af-400e-a383-71a2d10431c8)
+
+7. Community Forum
+![image](https://github.com/user-attachments/assets/37680b72-840d-472e-9510-75ca30370f48)
+
+### SITE SCREENSHOT
+1. Dashboard
+![image](https://github.com/user-attachments/assets/2d3b729b-4955-42f3-a3fa-8d2283b2d244)
+
+2. Workout Tracker
+![image](https://github.com/user-attachments/assets/5ab37d8c-b0ef-4563-86cd-42fe7f05b4f8)
+
+3. Nutrition Tracker
+//image
+
+4. Goal and Progress
+![image](https://github.com/user-attachments/assets/8098bf04-54b4-46cc-bd13-f02fc536cf9a)
+
+5. Daily Motivation
+//image
+ ![Screenshot 2025-06-12 161948](https://github.com/user-attachments/assets/d88c8f8b-729e-4a80-892c-afb39bd2b238)
+
+6. Community Forum
+   - Community Index Page
+![image](https://github.com/user-attachments/assets/d507383b-403d-465d-a57a-8f1ee317373b)
+
+   - Discussion Page
+![image](https://github.com/user-attachments/assets/5e25d409-823d-42b5-90bd-8139a91ef379)
+
+   - Workout Sharing Page
+![image](https://github.com/user-attachments/assets/7fd2bc44-6720-41cd-b113-7c6a0967334a)
+
+### CHALLENGES
+ - Integrating different modules developed by various team members due to differences in coding styles, database structures, and logic flows, requiring effective coordination and consistent collaboration throughout the project.
+ - Getting the motivations.index when trying to run due to confusion with the existence of table or name of the file
+ - There was a conflict when implement the authentication with Laravel Jetstream, where caused several errors and issues throughtout the entire project. As a result our team encountered by manually resolve and implement the necessary changes ourselves.
+ - Our team faced a situations where everything worked excellently on our own branches on GitHub without any errors. But once branches were merged, conflicts and errors appear which leading to problems that affected the final product.
+ - During the process of pulling the merged branch, some team members faced difficulties executing the migration files successfully.
 
 ### REFERENCES
 - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/

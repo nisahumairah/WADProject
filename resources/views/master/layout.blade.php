@@ -38,7 +38,7 @@
         <div class="main-panel">
             <!-- Content -->
             <div class="content">
-                <div class="container-fluid">
+                <div class="container-fluid" id="main-content">
                     @yield('content')
                 </div>
             </div>
@@ -67,6 +67,25 @@
     <!-- Main JS -->
     <script src="{{ asset('assets/js/ready.min.js') }}"></script>
     <script src="{{ asset('assets/js/demo.js') }}"></script>
+
+    <!-- AJAX for Nutrition Planner -->
+    <script>
+        $(document).on('click', 'a[data-load="nutrition"]', function(e) {
+            e.preventDefault();
+            console.log("Nutrition link clicked");
+
+            $.ajax({
+                url: '/load-nutritionplanner',
+                method: 'GET',
+                success: function(data) {
+                    $('#main-content').html(data);
+                },
+                error: function(xhr) {
+                    console.error("AJAX error:", xhr);
+                }
+            });
+        });
+    </script>
 
     <!-- Bootstrap-select JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>

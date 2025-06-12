@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NutritionController;
 use App\Http\Controllers\GoalController;
 use App\Http\Controllers\WorkoutController;
 use App\Http\Controllers\WorkoutPostController;
@@ -47,16 +48,17 @@ Route::middleware(['auth'])->group(function () {
     Route::get('workouts/progress', [WorkoutController::class, 'progress'])->name('workouts.progress');
 });
 
-// Community Routes
-Route::prefix('community')->group(function () {
-    Route::get('/', function () {
-        $trendingTopics = ForumTopic::latest()->take(3)->get();
-        $popularWorkouts = WorkoutPost::withCount('likes')
-            ->orderBy('likes_count', 'desc')
-            ->take(4)
-            ->get();
-        return view('community.index', compact('trendingTopics', 'popularWorkouts'));
-    })->name('community.index');
+// Display Community Page
+Route::get('/community', function () {
+    $trendingTopics = ForumTopic::latest()->take(3)->get();
+
+    $popularWorkouts = WorkoutPost::withCount('likes')
+        ->orderBy('likes_count', 'desc')
+        ->take(4)
+        ->get();
+
+    return view('community.index', compact('trendingTopics', 'popularWorkouts'));
+})->name('community.index');
 
     // Workout Posts
     Route::resource('workouts', WorkoutPostController::class)->names([
@@ -86,7 +88,7 @@ Route::prefix('community')->group(function () {
     // Likes
     Route::post('/workouts/{workoutPost}/like', [LikeController::class, 'toggleWorkoutLike'])->name('community.workouts.like');
     Route::post('/comments/{comment}/like', [LikeController::class, 'toggleForumCommentLike'])->name('community.comments.like');
-});
+    });
 
     // Motivation Routes
     Route::middleware(['auth'])->group(function () {
@@ -97,3 +99,7 @@ Route::prefix('community')->group(function () {
     Route::get('motivations/{motivation}/edit', [MotivationController::class, 'edit'])->name('motivations.edit');
     Route::post('/motivations/{motivation}/bookmark', [MotivationController::class, 'toggleBookmark'])->middleware('auth')->name('motivations.bookmark');
     Route::post('/motivations/{motivation}/like', [MotivationController::class, 'toggleLike'])->middleware('auth')->name('motivations.like');
+
+    // Nutrition Routes
+    Route::get('/nutrition', [NutritionController::class, 'index'])->name('nutrition');
+    Route::get('/nutrition/load', [NutritionController::class, 'load'])->name('nutrition.load');
