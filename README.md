@@ -248,7 +248,8 @@ Users can manage their daily meals through a structured log:
    - Workout Sharing Page
 ![image](https://github.com/user-attachments/assets/7fd2bc44-6720-41cd-b113-7c6a0967334a)
 
-
+### CHALLENGES
+ - Integrating different modules developed by various team members due to differences in coding styles, database structures, and logic flows, requiring effective coordination and consistent collaboration throughout the project.
 
 ### REFERENCES
 - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/
