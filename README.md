@@ -239,9 +239,11 @@ Users can manage their daily meals through a structured log:
 4. Goal and Progress
 ![image](https://github.com/user-attachments/assets/8098bf04-54b4-46cc-bd13-f02fc536cf9a)
 5. Daily Motivation
-//image! 
-[Screenshot 2025-06-12![Screenshot 2025-06-12 161948](https://github.com/user-attachments/assets/744b48f4-de68-4e1d-a8fe-f2aada96af05)
- 162021](https://github.com/user-attachments/assets/8b951640-856f-4e0d-be72-d80c38878f0c)
+//image!
+ - Islamic Motivation
+[Screenshot](https://github.com/user-attachments/assets/97678a46-1314-402f-8826-31ce0467d4ac)
+ - Add New Motivation
+![Screenshot](https://github.com/user-attachments/assets/c77478fd-81b6-4aad-9623-8c17be300b3f)
 
 7. Community Forum
    - Community Index Page
@@ -253,6 +255,7 @@ Users can manage their daily meals through a structured log:
 
 ### CHALLENGES
  - Integrating different modules developed by various team members due to differences in coding styles, database structures, and logic flows, requiring effective coordination and consistent collaboration throughout the project.
+ - getting the motivations.index when trying to run due to confusion with the existence of table or name of the file
 
 ### REFERENCES
 - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/
