@@ -231,29 +231,48 @@ Users can manage their daily meals through a structured log:
 
 ### MOCKUPS
 1. Dashboard
+![image](https://github.com/user-attachments/assets/eb9b6b7f-513f-4fe4-8f5c-7e49a8791187)
+
 2. Workout Tracker
+![image](https://github.com/user-attachments/assets/ca47fb33-ec03-4be5-a514-80ff95e924e9)
+
 3. Nutrition Tracker
+![image](https://github.com/user-attachments/assets/bcf5fb1c-205b-4400-9b26-5b61ca888f2d)
+
 4. Goal and Progress
+![image](https://github.com/user-attachments/assets/3fb2f7c0-07a8-4961-b4f5-3f8c10763b4d)
+
 5. Daily Motivation
-6. Community Forum
+![image](https://github.com/user-attachments/assets/c445dd52-f869-4028-9535-70e5524de40d)
+![image](https://github.com/user-attachments/assets/28447745-f8af-400e-a383-71a2d10431c8)
+
+7. Community Forum
+![image](https://github.com/user-attachments/assets/37680b72-840d-472e-9510-75ca30370f48)
 
 ### SITE SCREENSHOT
 1. Dashboard
 ![image](https://github.com/user-attachments/assets/2d3b729b-4955-42f3-a3fa-8d2283b2d244)
+
 2. Workout Tracker
 ![image](https://github.com/user-attachments/assets/5ab37d8c-b0ef-4563-86cd-42fe7f05b4f8)
+
 3. Nutrition Tracker
 //image
+
 4. Goal and Progress
 ![image](https://github.com/user-attachments/assets/8098bf04-54b4-46cc-bd13-f02fc536cf9a)
+
 5. Daily Motivation
 //image
  ![Screenshot 2025-06-12 161948](https://github.com/user-attachments/assets/d88c8f8b-729e-4a80-892c-afb39bd2b238)
+
 6. Community Forum
    - Community Index Page
 ![image](https://github.com/user-attachments/assets/d507383b-403d-465d-a57a-8f1ee317373b)
+
    - Discussion Page
 ![image](https://github.com/user-attachments/assets/5e25d409-823d-42b5-90bd-8139a91ef379)
+
    - Workout Sharing Page
 ![image](https://github.com/user-attachments/assets/7fd2bc44-6720-41cd-b113-7c6a0967334a)
 
