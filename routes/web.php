@@ -9,6 +9,7 @@ use App\Http\Controllers\ForumController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\LikeController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\MotivationController;
 use App\Models\ForumTopic;
 use App\Models\WorkoutPost;
 
@@ -26,15 +27,26 @@ Route::post('/register', [AuthController::class, 'register']);
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-// Middleware to protect routes
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('auth')->name('dashboard');
+// Protected Routes
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
 
-// Display Profile
-Route::get('/profile', function () {
-    return view('profile');
-})->middleware('auth')->name('profile');
+    Route::get('/profile', function () {
+        return view('profile');
+    })->name('profile');
+
+    // Goal-related routes
+    Route::resource('goals', GoalController::class);
+    Route::post('/goals/update-weight', [GoalController::class, 'updateWeight'])->name('goals.updateWeight');
+    Route::post('/goals/update-workout', [GoalController::class, 'updateWorkout'])->name('goals.updateWorkout');
+    Route::post('/goals/update-water', [GoalController::class, 'updateWater'])->name('goals.updateWater');
+
+    // Workout-related routes
+    Route::resource('workouts', WorkoutController::class);
+    Route::get('workouts/progress', [WorkoutController::class, 'progress'])->name('workouts.progress');
+});
 
 // Display Community Page
 Route::get('/community', function () {
@@ -48,31 +60,25 @@ Route::get('/community', function () {
     return view('community.index', compact('trendingTopics', 'popularWorkouts'));
 })->name('community.index');
 
-// Goal-related routes
-Route::resource('goals', GoalController::class);
-Route::post('/goals/update-weight', [GoalController::class, 'updateWeight'])->name('goals.updateWeight');
-Route::post('/goals/update-workout', [GoalController::class, 'updateWorkout'])->name('goals.updateWorkout');
-Route::post('/goals/update-water', [GoalController::class, 'updateWater'])->name('goals.updateWater');
-
-// Workout-related routes
-Route::resource('workouts', WorkoutController::class);
-Route::get('workouts/progress', [WorkoutController::class, 'progress'])->name('workouts.progress');
-
-// Community Routes
-Route::prefix('community')->group(function () {
     // Workout Posts
-    Route::get('/workouts', [WorkoutPostController::class, 'index'])->name('community.workouts.index');
-    Route::get('/workouts/create', [WorkoutPostController::class, 'create'])->name('community.workouts.create');
-    Route::post('/workouts', [WorkoutPostController::class, 'store'])->name('community.workouts.store');
-    Route::get('/workouts/{workoutPost}', [WorkoutPostController::class, 'show'])->name('community.workouts.show');
-    Route::delete('/community/workouts/{workoutPost}', [WorkoutPostController::class, 'destroy'])->name('community.workouts.destroy');
+    Route::resource('workouts', WorkoutPostController::class)->names([
+        'index' => 'community.workouts.index',
+        'create' => 'community.workouts.create',
+        'store' => 'community.workouts.store',
+        'show' => 'community.workouts.show',
+        'edit' => 'community.workouts.edit',
+        'update' => 'community.workouts.update',
+        'destroy' => 'community.workouts.destroy'
+    ]);
 
     // Forum Discussions
-    Route::get('/discussions', [ForumController::class, 'index'])->name('community.discussions.index');
-    Route::get('/discussions/create', [ForumController::class, 'create'])->name('community.discussions.create');
-    Route::post('/discussions', [ForumController::class, 'store'])->name('community.discussions.store');
-    Route::get('/discussions/{forumTopic}', [ForumController::class, 'show'])->name('community.discussions.show');
-    Route::delete('/discussions/{forumTopic}', [ForumController::class, 'destroy'])->name('community.discussions.destroy');
+    Route::resource('discussions', ForumController::class)->names([
+        'index' => 'community.discussions.index',
+        'create' => 'community.discussions.create',
+        'store' => 'community.discussions.store',
+        'show' => 'community.discussions.show',
+        'destroy' => 'community.discussions.destroy'
+    ]);
     Route::post('/discussions/replies/{reply}/mark-helpful', [ForumController::class, 'markHelpfulReply'])->name('community.discussions.replies.mark-helpful');
 
     // Comments
@@ -82,12 +88,18 @@ Route::prefix('community')->group(function () {
     // Likes
     Route::post('/workouts/{workoutPost}/like', [LikeController::class, 'toggleWorkoutLike'])->name('community.workouts.like');
     Route::post('/comments/{comment}/like', [LikeController::class, 'toggleForumCommentLike'])->name('community.comments.like');
+    });
 
-    // Edit / Update Workout Posts
-    Route::get('/workouts/{workoutPost}/edit', [WorkoutPostController::class, 'edit'])->name('community.workouts.edit');
-    Route::put('/workouts/{workoutPost}', [WorkoutPostController::class, 'update'])->name('community.workouts.update');
-});
+    // Motivation Routes
+    Route::middleware(['auth'])->group(function () {
+    Route::resource('motivations', MotivationController::class)->except(['show']);
+    });
 
-// Nutrition Routes
-Route::get('/nutrition', [NutritionController::class, 'index'])->name('nutrition');
-Route::get('/nutrition/load', [NutritionController::class, 'load'])->name('nutrition.load');
+    Route::get('motivations/{motivation}', [MotivationController::class, 'show'])->name('motivations.show');
+    Route::get('motivations/{motivation}/edit', [MotivationController::class, 'edit'])->name('motivations.edit');
+    Route::post('/motivations/{motivation}/bookmark', [MotivationController::class, 'toggleBookmark'])->middleware('auth')->name('motivations.bookmark');
+    Route::post('/motivations/{motivation}/like', [MotivationController::class, 'toggleLike'])->middleware('auth')->name('motivations.like');
+
+    // Nutrition Routes
+    Route::get('/nutrition', [NutritionController::class, 'index'])->name('nutrition');
+    Route::get('/nutrition/load', [NutritionController::class, 'load'])->name('nutrition.load');

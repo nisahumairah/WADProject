@@ -71,14 +71,11 @@
                     <p>Goals & Progress</p>
                 </a>
             </li>
-
-            <li class="nav-item">
-                <a href="#">
-                    <i class="la la-sun-o"></i>
-                    <p>Daily Motivation</p>
-                </a>
-            </li>
-
+            <li class="nav-item {{ request()->is('motivations*') ? 'active' : '' }}">
+              <a href="{{ route('motivations.index') }}">
+                <i class="la la-sun-o"></i>
+                <p>Daily Motivation</p>
+              </a>
             <li class="nav-item {{ request()->is('community*') ? 'active' : '' }}">
                 <a href="{{ route('community.index') }}">
                     <i class="la la-users"></i>
