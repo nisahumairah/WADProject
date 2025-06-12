@@ -29,19 +29,19 @@
         <!-- Sidebar -->
         @include('partial.sidebar')
 
-        <!-- Main Panel -->
-        <div class="main-panel">
-            <!-- Content -->
-            <div class="content">
-                <div class="container-fluid">
-                    @yield('content')
-                </div>
-            </div>
-
-            <!-- Footer -->
-            @include('partial.footer')
+       <!-- Main Panel -->
+<div class="main-panel">
+    <!-- Content -->
+    <div class="content">
+        <div class="container-fluid" id="main-content">  {{-- ✅ IMPORTANT --}}
+            @yield('content')
         </div>
     </div>
+
+    <!-- Footer -->
+    @include('partial.footer')
+</div>
+
 
     <!-- Core JS -->
     <script src="{{ asset('assets/js/core/jquery.3.2.1.min.js') }}"></script>
@@ -62,6 +62,25 @@
     <!-- Main JS -->
     <script src="{{ asset('assets/js/ready.min.js') }}"></script>
     <script src="{{ asset('assets/js/demo.js') }}"></script>
+
+    <script>
+    $(document).on('click', 'a[data-load="nutrition"]', function(e) {
+    e.preventDefault();
+    console.log("Nutrition link clicked"); // ✅ for debugging
+
+    $.ajax({
+        url: '/load-nutritionplanner',
+        method: 'GET',
+        success: function(data) {
+            $('#main-content').html(data); // ✅ injects HTML response
+        },
+        error: function(xhr) {
+            console.error("AJAX error:", xhr); // for debugging
+        }
+    });
+});
+</script>
+
 
     @yield('scripts')
 </body>

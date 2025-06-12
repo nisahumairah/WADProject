@@ -49,14 +49,14 @@
                     <p>Components</p>
                     <span class="badge badge-count">14</span>
                 </a>
-            </li>
-            <li class="nav-item">
-                <a href="#">
-                    <i class="la la-keyboard-o"></i>
-                    <p>Forms</p>
-                    <span class="badge badge-count">50</span>
+           <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
+                <a href="{{ route('nutrition') }}">
+                    <i class="la la-cutlery"></i>
+                    <p>Nutrition</p>
+                    <span class="badge badge-count">5</span>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a href="#">
                     <i class="la la-th"></i>
@@ -87,3 +87,4 @@
         </ul>
     </div>
 </div>
+
