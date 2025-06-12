@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Models\ForumTopic;
+use App\Models\Motivation;
+
+/**
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, Motivation> $bookmarkedMotivations
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, Motivation> $likedMotivations
+ */
 
 class User extends Authenticatable
 {
@@ -47,8 +53,19 @@ class User extends Authenticatable
         ];
     }
 
-    public function forumTopics()
-{
-    return $this->hasMany(ForumTopic::class);
-}
+    public function motivations()
+    {
+    return $this->hasMany(Motivation::class);
+    }
+
+    public function bookmarkedMotivations()
+    {
+        return $this->belongsToMany(Motivation::class, 'bookmarks');
+    }
+
+    public function likedMotivations()
+    {
+        return $this->belongsToMany(Motivation::class, 'motivation_likes');
+    }
+
 }
