@@ -77,6 +77,7 @@
         error: function(xhr) {
             console.error("AJAX error:", xhr); // for debugging
         }
+
     });
 });
 </script>
