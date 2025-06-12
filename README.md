@@ -239,8 +239,11 @@ Users can manage their daily meals through a structured log:
 4. Goal and Progress
 ![image](https://github.com/user-attachments/assets/8098bf04-54b4-46cc-bd13-f02fc536cf9a)
 5. Daily Motivation
-//image
-6. Community Forum
+//image! 
+[Screenshot 2025-06-12![Screenshot 2025-06-12 161948](https://github.com/user-attachments/assets/744b48f4-de68-4e1d-a8fe-f2aada96af05)
+ 162021](https://github.com/user-attachments/assets/8b951640-856f-4e0d-be72-d80c38878f0c)
+
+7. Community Forum
    - Community Index Page
 ![image](https://github.com/user-attachments/assets/d507383b-403d-465d-a57a-8f1ee317373b)
    - Discussion Page
