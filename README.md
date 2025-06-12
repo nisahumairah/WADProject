@@ -130,82 +130,51 @@ Sorting options:
 - By progress percentage
 - By target deadline
 
-### D. Nutrition & Meal Planner (Nur Balqis) <br/>
+
+### D. Nutrition & Meal Planner (Nur Balqis)  <br/>
+
 **Main Purpose:**
 To help users maintain a balanced and halal diet by planning meals, tracking nutritional intake, and aligning food choices with their health and fitness goals—while staying in harmony with Islamic dietary principles.
 
- **Core Functionalities:**
+### Core Functionalities:
 
-**1. Meal Planning and Logging (Post CRUD)**
+#### **1. Nutrition Tracker Dashboard**
 
-Users can add meals to their daily log, including key nutritional details:
+Visually displays daily nutritional intake with color-coded indicators:
 
-* Meal Type (Breakfast, Lunch, Dinner, Snack)
-* Food Items
+* **Macronutrient Boxes**:
+
+  * **Protein**: e.g., 65g / 120g (green)
+  * **Carbs**: e.g., 180g / 300g (orange)
+  * **Fats**: e.g., 40g / 70g (red)
+* **Donut Chart**:
+
+  * Real-time visual of Protein, Carbs, and Fats proportions.
+* **Water Intake Tracker**:
+
+  * Emoji-based water glasses.
+  * `+ / -` buttons to log consumption (e.g., 3 out of 8 glasses).
+
+#### **2. Meal Planning and Logging (CRUD System)**
+
+Users can manage their daily meals through a structured log:
+
+**Meal Entry Fields:**
+
+* Meal Type: *Breakfast, Lunch, Dinner, Snack*
+* Food Items: *Multiple entries possible (e.g., Bread, Peanut Butter)*
 * Portion Size
 * Calories
-* Macronutrients (Carbs, Protein, Fat)
-* Halal Indicator (Yes/No or Certified Source)
+* Macronutrients: *Carbs, Protein, Fat*
+* Halal Indicator: *Yes/No or Certified Source*
 
 **CRUD Operations:**
 
-* **Create** new meal plans and logs
-* **Edit** meals (users can modify their own entries)
-* **Delete** meal entries (user-specific)
-* **Read/View** personal meal logs
+**Create**: Add new meal logs with nutritional and halal details.
+**Edit**: Modify existing meals (user-specific).
+**Delete**: Remove logged meals.
+**View**: See a full list under "Today's Meals" (table view).
 
-**2. Daily/Weekly Nutrition Summary**
-
-Display nutrition breakdown and calorie intake:
-
-* Daily summary of calories and nutrients consumed
-* Weekly trend reports (chart/graph view)
-
-**3. Food Database Integration**
-
-* Built-in food database with common halal food items
-* Ability to add custom food items
-
-**4. Search and Filter Functionality**
-
-Users can easily search through their logs based on:
-
-* Meal type
-* Calorie range
-* Nutritional value (high protein, low carb, etc.)
-
-**5. Edit and Delete Entries**
-
-* Users can modify or remove inaccurate or outdated meal logs.
-* Editable fields: food item, portion, calories, etc.
-
- **6. Visualization of Nutrition Trends**
-
-Interactive charts to show:
-
-  * Calorie intake over time
-  * Macronutrient balance (Pie or Bar Charts)
-  * Comparison to user-defined goals
-
-**7. Islamic Dietary Motivation (Post CRUD)**
-
-**Main Purpose:**
-To reinforce Islamic values in nutrition by offering daily tips, reminders, and quotes from Qur’an/Hadith related to healthy eating, moderation, and gratitude.
-
-* Admin or authorized users can create motivational posts.
-* Each post includes:
-
-  * Quote/reminder
-  * Short reflection or tip
-  * Visual/image for engagement
-  * Tag (e.g., “Halal Eating,” “Moderation,” “Gratitude”)
-* Posts can be:
-
-  * Created by the author
-  * Edited/Updated by the author
-  * Deleted by the author or admin
-  * Viewed publicly by all users
-* Users can like, bookmark, and share posts within or outside the app.
 
 ### E. Daily Islamic Motivation (Nur Alia Alina) <br/>
 + **Main Purpose**:To inspire and uplift users on their fitness journey by providing daily Islamic reminders, quotes, or motivational content that promotes discipline, self-care, and spiritual well-being in alignment with Islamic teachings.
