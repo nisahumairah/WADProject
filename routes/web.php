@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NutritionController;
 use App\Http\Controllers\GoalController;
 use App\Http\Controllers\WorkoutController;
 use App\Http\Controllers\WorkoutPostController;
@@ -8,6 +9,8 @@ use App\Http\Controllers\ForumController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\LikeController;
 use App\Http\Controllers\AuthController;
+use App\Models\ForumTopic;
+use App\Models\WorkoutPost;
 
 // Default Route
 Route::get('/', function () {
@@ -28,15 +31,12 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware('auth')->name('dashboard');
 
-//Display Profile
+// Display Profile
 Route::get('/profile', function () {
     return view('profile');
 })->middleware('auth')->name('profile');
 
-//Display Community Page
-use App\Models\ForumTopic;
-use App\Models\WorkoutPost;
-
+// Display Community Page
 Route::get('/community', function () {
     $trendingTopics = ForumTopic::latest()->take(3)->get();
 
@@ -88,3 +88,6 @@ Route::prefix('community')->group(function () {
     Route::put('/workouts/{workoutPost}', [WorkoutPostController::class, 'update'])->name('community.workouts.update');
 });
 
+// Nutrition Routes
+Route::get('/nutrition', [NutritionController::class, 'index'])->name('nutrition');
+Route::get('/nutrition/load', [NutritionController::class, 'load'])->name('nutrition.load');

@@ -49,6 +49,7 @@
                     <p>Dashboard</p>
                 </a>
             </li>
+
             <li class="nav-item {{ request()->is('workouts') ? 'active' : '' }}">
                 <a href="{{ route('workouts.index') }}">
                     <i class="la la-table"></i>
@@ -56,24 +57,28 @@
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a href="#">
-                    <i class="la la-apple"></i>
+            <li class="nav-item {{ request()->is('nutrition') ? 'active' : '' }}">
+                <a href="{{ route('nutrition') }}">
+                    <i class="la la-cutlery"></i>
                     <p>Nutrition</p>
+                    <span class="badge badge-count">5</span>
                 </a>
             </li>
+
             <li class="nav-item {{ request()->is('goals*') ? 'active' : '' }}">
-              <a href="{{ route('goals.index') }}">
-                <i class="la la-bullseye"></i>
-                <p>Goals & Progress</p>
-              </a>
+                <a href="{{ route('goals.index') }}">
+                    <i class="la la-bullseye"></i>
+                    <p>Goals & Progress</p>
+                </a>
             </li>
+
             <li class="nav-item">
                 <a href="#">
                     <i class="la la-sun-o"></i>
                     <p>Daily Motivation</p>
                 </a>
             </li>
+
             <li class="nav-item {{ request()->is('community*') ? 'active' : '' }}">
                 <a href="{{ route('community.index') }}">
                     <i class="la la-users"></i>
