@@ -1,33 +1,39 @@
+@php
+    use Illuminate\Support\Facades\Auth;
+    $user = Auth::user();
+@endphp
+
 <div class="sidebar">
     <div class="scrollbar-inner sidebar-wrapper">
         <div class="user">
             <div class="photo">
-                <img src="{{ asset('assets/img/profile.jpg') }}">
+                {{-- Default placeholder image --}}
+                <img src="{{ asset('assets/img/user-icon.png') }}" alt="User Avatar">
             </div>
             <div class="info">
                 <a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
                     <span>
-                        Hizrian
-                        <span class="user-level">Administrator</span>
+                        Hi! {{ $user->name ?? 'Guest' }}
+                        <span class="user-level">Sport Enthusiast</span>
                         <span class="caret"></span>
                     </span>
                 </a>
                 <div class="clearfix"></div>
 
-                <div class="collapse in" id="collapseExample" aria-expanded="true" style="">
+                <div class="collapse in" id="collapseExample" aria-expanded="true">
                     <ul class="nav">
                         <li>
-                            <a href="#profile">
+                            <a href="{{ route('profile') }}">
                                 <span class="link-collapse">My Profile</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#edit">
+                            <a href="{{ route('profile') }}">
                                 <span class="link-collapse">Edit Profile</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#settings">
+                            <a href="#">
                                 <span class="link-collapse">Settings</span>
                             </a>
                         </li>
@@ -35,21 +41,23 @@
                 </div>
             </div>
         </div>
+
         <ul class="nav">
-            <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
+            <li class="nav-item {{ request()->is('dashboard') ? 'active' : '' }}">
                 <a href="{{ route('dashboard') }}">
                     <i class="la la-dashboard"></i>
                     <p>Dashboard</p>
-                    <span class="badge badge-count">5</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="#">
+
+            <li class="nav-item {{ request()->is('workouts') ? 'active' : '' }}">
+                <a href="{{ route('workouts.index') }}">
                     <i class="la la-table"></i>
-                    <p>Components</p>
-                    <span class="badge badge-count">14</span>
+                    <p>Workout Tracker</p>
                 </a>
-           <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
+            </li>
+
+            <li class="nav-item {{ request()->is('nutrition') ? 'active' : '' }}">
                 <a href="{{ route('nutrition') }}">
                     <i class="la la-cutlery"></i>
                     <p>Nutrition</p>
@@ -57,34 +65,26 @@
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a href="#">
-                    <i class="la la-th"></i>
-                    <p>Tables</p>
-                    <span class="badge badge-count">6</span>
+            <li class="nav-item {{ request()->is('goals*') ? 'active' : '' }}">
+                <a href="{{ route('goals.index') }}">
+                    <i class="la la-bullseye"></i>
+                    <p>Goals & Progress</p>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a href="#">
-                    <i class="la la-bell"></i>
-                    <p>Notifications</p>
-                    <span class="badge badge-success">3</span>
+                    <i class="la la-sun-o"></i>
+                    <p>Daily Motivation</p>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="#">
-                    <i class="la la-font"></i>
-                    <p>Typography</p>
-                    <span class="badge badge-danger">25</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#">
-                    <i class="la la-fonticons"></i>
-                    <p>Icons</p>
+
+            <li class="nav-item {{ request()->is('community*') ? 'active' : '' }}">
+                <a href="{{ route('community.index') }}">
+                    <i class="la la-users"></i>
+                    <p>Community</p>
                 </a>
             </li>
         </ul>
     </div>
 </div>
-

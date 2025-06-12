@@ -72,10 +72,6 @@ This app is built for Muslims who want to take care of their bodies while stayin
 **4. Edit and Delete Workout Entries**
 - Users can modify / remove any inaccurate or outdated workout data
 
-**5. Visualization of Progress**
-- Users can view a progress chart / graph
-- Track improvements in workout performance over time.
-
 
 ### C. Goal & Progress Dashboard (Nurfathin Atirah) <br/>
 **Main Purpose:**
@@ -245,28 +241,17 @@ To reinforce Islamic values in nutrition by offering daily tips, reminders, and 
 - Post can be:
    + Created
    + Edited (only by the author)
-   + Deleted (only by the author or admin)
-   + Viewed publicly <br/>
+   + Deleted (only by the author or admin)<br/>
    
 **2. Like and Comment System**
 - Users can like a post
 - Users can leave comments
 - Users can edit or delete their own comments <br/>
 
-**3. Category & Tag Filtering**
-- Filter posts by difficulty level, tags (e.g., "Core", "Beginner", "Fat Loss")
-- Search function by keyword  <br/>
-
-**4. Forum Section (Q&A Style)**
+**3. Forum Section (Q&A Style)**
 - Users can create topics/questions (e.g., “How to build stamina for futsal?”)
 - Others can reply to the topic
 - Replies can be liked or marked as helpful by the original poster  <br/>
-
-**5. User Profile Integration**
-- Each user has a public profile showing:
-   + Their shared routines
-   + Forum activity (topics & replies
-   + Total likes and comments received  <br/>
 
 ### ENTITY RELATIONSHIP DIAGRAM (ERD)
 ![Image](https://github.com/user-attachments/assets/25643959-0457-4529-851c-e320e7eb23d0)
@@ -275,21 +260,26 @@ To reinforce Islamic values in nutrition by offering daily tips, reminders, and 
 
 ![diagram-export-18-05-2025-10_56_08-am](https://github.com/user-attachments/assets/3cc4ea4c-ee5a-426d-8487-205dd62db4e0)
 
-### MOCKUPS
+### SITE SCREENSHOT
 1. Dashboard
-![Screenshot_20-5-2025_85922_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/6ec4a0c7-ec7d-41c6-9bf4-55e6d3c17804)
+![image](https://github.com/user-attachments/assets/2d3b729b-4955-42f3-a3fa-8d2283b2d244)
 2. Workout Tracker
-![Screenshot_20-5-2025_85930_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/0246e349-cb3a-420e-8d45-56097ec5ce0c)
+![image](https://github.com/user-attachments/assets/5ab37d8c-b0ef-4563-86cd-42fe7f05b4f8)
 3. Nutrition Tracker
-![Screenshot_20-5-2025_85938_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/f0fcb9d7-7f3c-4484-bfa7-d3b918c645a3)
+//image
 4. Goal and Progress
-![Screenshot_20-5-2025_85746_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/53ae2473-b3ba-4108-9a78-d612fd88ad5b)
-5. Community Forum
-![Screenshot_20-5-2025_85755_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/a25758ca-dcf1-4572-94b1-7a16c91b93de)
-6. Quran
-![Screenshot_20-5-2025_8584_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/198279d1-720e-4934-aa35-6972f7dfa507)
-7. Hadith
-![Screenshot_20-5-2025_85812_667d12a1-a2ac-41bf-8aba-933fdd604bcd-00-1w97px4zwe920 riker replit dev](https://github.com/user-attachments/assets/0d2a730b-8f6d-43a8-baaa-9553b6f4b7c5)
+![image](https://github.com/user-attachments/assets/8098bf04-54b4-46cc-bd13-f02fc536cf9a)
+5. Daily Motivation
+//image
+6. Community Forum
+   - Community Index Page
+![image](https://github.com/user-attachments/assets/d507383b-403d-465d-a57a-8f1ee317373b)
+   - Discussion Page
+![image](https://github.com/user-attachments/assets/5e25d409-823d-42b5-90bd-8139a91ef379)
+   - Workout Sharing Page
+![image](https://github.com/user-attachments/assets/7fd2bc44-6720-41cd-b113-7c6a0967334a)
+
+
 
 ### REFERENCES
 - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/

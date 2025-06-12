@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Ready Bootstrap Dashboard')</title>
+    <title>@yield('title', 'FitMuslim GO')</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/img/favicon.ico') }}" type="image/x-icon">
@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="{{ asset('assets/css/ready.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/demo.css') }}">
 
+    <!-- Bootstrap-select CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     @yield('styles')
 </head>
 <body>
@@ -29,19 +34,19 @@
         <!-- Sidebar -->
         @include('partial.sidebar')
 
-       <!-- Main Panel -->
-<div class="main-panel">
-    <!-- Content -->
-    <div class="content">
-        <div class="container-fluid" id="main-content">  {{-- ✅ IMPORTANT --}}
-            @yield('content')
+        <!-- Main Panel -->
+        <div class="main-panel">
+            <!-- Content -->
+            <div class="content">
+                <div class="container-fluid" id="main-content">
+                    @yield('content')
+                </div>
+            </div>
+
+            <!-- Footer -->
+            @include('partial.footer')
         </div>
     </div>
-
-    <!-- Footer -->
-    @include('partial.footer')
-</div>
-
 
     <!-- Core JS -->
     <script src="{{ asset('assets/js/core/jquery.3.2.1.min.js') }}"></script>
@@ -63,25 +68,27 @@
     <script src="{{ asset('assets/js/ready.min.js') }}"></script>
     <script src="{{ asset('assets/js/demo.js') }}"></script>
 
+    <!-- AJAX for Nutrition Planner -->
     <script>
-    $(document).on('click', 'a[data-load="nutrition"]', function(e) {
-    e.preventDefault();
-    console.log("Nutrition link clicked"); // ✅ for debugging
+        $(document).on('click', 'a[data-load="nutrition"]', function(e) {
+            e.preventDefault();
+            console.log("Nutrition link clicked");
 
-    $.ajax({
-        url: '/load-nutritionplanner',
-        method: 'GET',
-        success: function(data) {
-            $('#main-content').html(data); // ✅ injects HTML response
-        },
-        error: function(xhr) {
-            console.error("AJAX error:", xhr); // for debugging
-        }
+            $.ajax({
+                url: '/load-nutritionplanner',
+                method: 'GET',
+                success: function(data) {
+                    $('#main-content').html(data);
+                },
+                error: function(xhr) {
+                    console.error("AJAX error:", xhr);
+                }
+            });
+        });
+    </script>
 
-    });
-});
-</script>
-
+    <!-- Bootstrap-select JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
 
     @yield('scripts')
 </body>
