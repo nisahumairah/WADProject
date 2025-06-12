@@ -239,12 +239,9 @@ Users can manage their daily meals through a structured log:
 4. Goal and Progress
 ![image](https://github.com/user-attachments/assets/8098bf04-54b4-46cc-bd13-f02fc536cf9a)
 5. Daily Motivation
-//image!
- - Islamic Motivation
-[Screenshot](https://github.com/user-attachments/assets/97678a46-1314-402f-8826-31ce0467d4ac)
-
-
-7. Community Forum
+//image
+ ![Screenshot 2025-06-12 161948](https://github.com/user-attachments/assets/d88c8f8b-729e-4a80-892c-afb39bd2b238)
+6. Community Forum
    - Community Index Page
 ![image](https://github.com/user-attachments/assets/d507383b-403d-465d-a57a-8f1ee317373b)
    - Discussion Page
