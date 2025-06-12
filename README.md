@@ -72,10 +72,6 @@ This app is built for Muslims who want to take care of their bodies while stayin
 **4. Edit and Delete Workout Entries**
 - Users can modify / remove any inaccurate or outdated workout data
 
-**5. Visualization of Progress**
-- Users can view a progress chart / graph
-- Track improvements in workout performance over time.
-
 
 ### C. Goal & Progress Dashboard (Nurfathin Atirah) <br/>
 **Main Purpose:**
