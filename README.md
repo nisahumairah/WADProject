@@ -254,6 +254,7 @@ Users can manage their daily meals through a structured log:
  - Getting the motivations.index when trying to run due to confusion with the existence of table or name of the file
  - There was a conflict when implement the authentication with Laravel Jetstream, where caused several errors and issues throughtout the entire project. As a result our team encountered by manually resolve and implement the necessary changes ourselves.
  - Our team faced a situations where everything worked excellently on our own branches on GitHub without any errors. But once branches were merged, conflicts and errors appear which leading to problems that affected the final product.
+ - During the process of pulling the merged branch, some team members faced difficulties executing the migration files successfully.
 
 ### REFERENCES
 - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/
