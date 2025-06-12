@@ -242,8 +242,7 @@ Users can manage their daily meals through a structured log:
 //image!
  - Islamic Motivation
 [Screenshot](https://github.com/user-attachments/assets/97678a46-1314-402f-8826-31ce0467d4ac)
- - Add New Motivation
-![Screenshot](https://github.com/user-attachments/assets/c77478fd-81b6-4aad-9623-8c17be300b3f)
+
 
 7. Community Forum
    - Community Index Page
